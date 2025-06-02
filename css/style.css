@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
 
+@font-face {
+  font-family: 'mario';
+  src: url('../font/mario.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +14,7 @@
 }
 
 body{
-    background-color: rgb(0, 110, 255);
+    background-color: #5c94fc;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +29,24 @@ body{
     position: relative;
     overflow: hidden;
     background: linear-gradient(lightblue, white);
+}
+
+#contador {
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: 'mario', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+      text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     3px  3px 0 black;
 }
 
 .pipe {
@@ -56,9 +81,9 @@ body{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 30px;
     color: white;
-    font-family: "Jaro", sans-serif;
+    font-family: 'mario', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -69,8 +94,8 @@ button{
     height: 40px;
     font-size: 16px;
     font-optical-sizing: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: 'mario', sans-serif;
+    
     font-style: normal;
     border-radius: 20px;
     background-color: red;
