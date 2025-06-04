@@ -43,6 +43,6 @@ const loop = setInterval(() => {
         gameRunning = false;
         clearInterval(loop);
     }
-}, 100);
+}, 10);
 
 document.addEventListener('keydown', jump);
